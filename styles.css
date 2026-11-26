@@ -24,19 +24,38 @@ h1{
     padding:0px;
 transition: letter-spacing 0.5s, padding 0.5s;
 }
+@keyframes hover {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes unhover {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
 #hexp{
     font-size:3vw;
     color:#ffffff42;
     margin-top: 0px;
-transition: all 0.5s;
+    animation: unhover 0.5s ease-in-out;
+
 }
 h1:hover {
     letter-spacing: 0.2em;
     padding:3vh;
 transition: letter-spacing 0.5s, padding 0.5s;}
 #hexp:hover {
+    color: #ffffff96 ;
+    transition: all 0.5s;
+    animation: hover 0.5s ease-in-out;
 
-transition: all 0.5s,
 }
 #icon {
     position: fixed;

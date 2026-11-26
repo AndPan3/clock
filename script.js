@@ -29,12 +29,27 @@ console.log("Thanks for using my website ^^, for more Projects check out my GitH
 date()
 setInterval(date,1000)
 
+date()
+setInterval(date,1000)
+
 hexp.addEventListener("mouseenter",()=>{
-    hexphover = true;
+
+    setInterval(date,10)
+
+    setTimeout(() => {
+        hexphover = true;;}, 250);
+
     date()
+    setInterval(date,550)
 })
+
 hexp.addEventListener("mouseleave",()=>{
-    setTimeout(1000);
-    hexphover = false;
+    setInterval(date,10)
+
+    setTimeout(() => {
+        hexphover = false;;}, 250);
+
+    setInterval(date,10)
     date()
+    setInterval(date,550)
 })
