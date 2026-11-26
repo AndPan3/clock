@@ -1,3 +1,7 @@
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
 .coiny-regular {
   font-family: "Coiny", system-ui;
   font-weight: 400;
@@ -24,16 +28,15 @@ transition: letter-spacing 0.5s, padding 0.5s;
     font-size:3vw;
     color:#ffffff42;
     margin-top: 0px;
-transition: letter-spacing 0.5s, padding 0.5s;
+transition: all 0.5s;
 }
 h1:hover {
     letter-spacing: 0.2em;
     padding:3vh;
 transition: letter-spacing 0.5s, padding 0.5s;}
 #hexp:hover {
-    letter-spacing: 0.4em;
-    padding:2vh;
-transition: letter-spacing 0.5s, padding 0.5s;
+
+transition: all 0.5s,
 }
 #icon {
     position: fixed;
