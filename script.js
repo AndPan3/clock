@@ -27,29 +27,24 @@ document.documentElement.style.backgroundColor = RGB;
 }
 console.log("Thanks for using my website ^^, for more Projects check out my GitHub (AndPan3) and/or my site! www.andrejbajusic.ch")
 date()
-setInterval(date,1000)
-
-date()
-setInterval(date,1000)
+i = setInterval(date,500)
 
 hexp.addEventListener("mouseenter",()=>{
 
-    setInterval(date,10)
+    clearInterval(i)
+    y = setInterval(date,10)
 
     setTimeout(() => {
         hexphover = true;;}, 250);
-
+    clearInterval(y)
     date()
-    setInterval(date,550)
+    z = setInterval(date,550)
 })
 
 hexp.addEventListener("mouseleave",()=>{
-    setInterval(date,10)
-
-    setTimeout(() => {
+    clearInterval(z)
+        setTimeout(() => {
         hexphover = false;;}, 250);
-
-    setInterval(date,10)
     date()
-    setInterval(date,550)
+    i = setInterval(date,550)
 })
